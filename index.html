@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Front end 2</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Packages box -->
+      <div class="package">
+        <div  class="package-items">
+          <!-- Package ENTERPRISE -->
+          <div onclick="selectPackgeEnterPrice()" id="package-item-list-enterprise" class="package-item-list-enterprise">
+            <div class="package-item-list-name">
+              <p>ENTERPRISE</p>
+            </div>
+            <div class="package-item-list-price">
+              <p>$1999</p>
+            </div>
+          </div>
+
+          <!-- Package PROFESSIONAL -->
+          <div onclick="selectPackgeProfessional()" id="package-item-list-professional" class="package-item-list-professional">
+            <div class="package-item-list-name">
+              <p>PROFESSIONAL</p>
+            </div>
+            <div class="package-item-list-price">
+              <p>$799</p>
+            </div>
+          </div>
+
+          <!-- Package STANDARD -->
+          <div onclick="selectPackgeStandard()" id="package-item-list-standard" class="package-item-list-standard">
+            <div class="package-item-list-name">
+              <p>STANDARD</p>
+            </div>
+            <div>
+              <p class="package-item-list-price">$349</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-payments">
+          <div onclick="selectPaypal()" class="package-payment-list">
+            <p>Paypals</p>
+          </div>
+          <div onclick="selectCheck()" class="package-payment-list">Check</div>
+          <div onclick="selectCash()" class="package-payment-list">Cash</div>
+        </div>
+      </div>
+
+      <!-- checkout -->
+      <div class="checkout">
+        <div class="checkout-content">
+          <!-- Package name -->
+          <div class="">
+            <h2 id="checkout-package-name"></h1i>
+          </div>
+          <hr />
+
+          <!-- Package price -->
+          <div class="checkout-package-price">
+            Price*:
+            <span id="checkout-package-price-value" class="checkout-package-price-value"></span>
+          </div>
+          <hr />
+
+          <!-- Package type -->
+          <div class="checkout-package-payment">
+            Payment Type*:
+            <span id="checkout-package-payment-value" class="checkout-package-payment-value">Cash</span>
+          </div>
+          <hr />
+
+          <!-- Prefix -->
+          <div class="checkout-package-prefix">
+            Prefix*:
+            <span >
+              <select onchange="selectPrefix()" id="checkout-package-prefix-value"  title="" name="prefix" id="">
+                <option value="">Plase select prefix</option>
+                <option value="miss">Miss</option>
+                <option value="mr">Mr</option>
+              </select>
+            </span>
+          </div>
+
+          <hr />
+          <!-- Name -->
+          <div class="checkout-package-username">
+            Name*:
+            <span >
+              <input onchange="inputName()" name="" id="checkout-package-username-value" type="text" />
+            </span>
+          </div>
+          <hr />
+
+          <!-- Phone -->
+          <div class="checkout-package-userphone">
+            Phone*:
+            <span>
+              <input onchange="inputPhone()" id="checkout-package-userphone-value" name="" type="text" />
+            </span>
+          </div>
+          <hr />
+
+          <!-- addr -->
+          <div>
+            <div class="checkout-package-address">Address*:</div>
+            <span >
+              <textarea onchange="inputAddress()" name="" id="checkout-package-address-value"></textarea>
+            </span>
+          </div>
+
+          <hr />
+          <!-- Buy btn -->
+          <button onclick="chckout()" class="btn-buy">Buy</button>
+        </div>
+      </div>
+
+      <div id="receipt" class="receipt" style="display: none;">
+        <div class="receipt-container">
+          <div class="receipt-content">
+            <h3 id="receipt-name">Receipt</h3>
+            <hr />
+
+            <div class="receipt-price">
+              Price*:
+              <span id="receipt-price-value" class="receipt-price-value"></span>
+            </div>
+
+            <hr />
+            <div class="receipt-payment-type">
+              Payment type*:
+              <span id="receipt-payment-type-value" class="receipt-payment-type-value"></span>
+            </div>
+
+            <hr />
+            <div class="receipt-prefix">
+              Prefix*:
+              <span id="receipt-prefix-value" class="receipt-prefix-value"></span>
+            </div>
+
+            <hr />
+            <div class="receipt-name">
+              Name*:
+              <span id="receipt-name-value" class="receipt-name-value"></span>
+            </div>
+
+            <hr />
+            <div class="receipt-phone">
+              Phone*:
+              <span id="receipt-phone-value" class="receipt-phone-value"></span>
+            </div>
+
+            <hr />
+
+            <div class="receipt-address">
+              Address*:
+              <span id="receipt-address-value" class="receipt-address-value"></span>
+            </div>
+            <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./script.js"></script>

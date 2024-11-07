@@ -1,0 +1,231 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    height: 100vh;
+    align-items: center;
+}
+
+/* Package  */
+.package{
+    background-color: skyblue;
+    height: 25rem;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.4);
+
+}
+
+/* package-items */
+.package-items{
+    display: flex;
+    gap:15px;
+    padding-bottom: 15px;
+}
+
+.package-item-list{
+    width: 100%;
+    height: 180px;
+    border-radius: 5px;
+    background-color: rgb(232, 201, 205);
+}
+
+.package-item-list-enterprise{
+    width: 100%;
+    height: 180px;
+    border-radius: 5px;
+    background-color: rgb(232, 201, 205);
+}
+
+.package-item-list-enterprise:hover{
+    scale: 1.1;
+}
+
+.package-item-list-enterprise:hover  .package-item-list-name{
+    background-color: red;
+}
+
+.package-item-list-professional:hover{
+    scale: 1.1;
+}
+
+.package-item-list-professional:hover .package-item-list-name{
+    background-color: red;
+}
+
+.package-item-list-standard:hover{
+    scale: 1.1;
+}
+
+.package-item-list-standard:hover .package-item-list-name{
+    background-color: red;
+}
+
+.package-item-list-professional{
+    width: 100%;
+    height: 180px;
+    border-radius: 5px;
+    background-color: rgb(232, 201, 205);
+}
+
+.package-item-list-standard{
+    width: 100%;
+    height: 180px;
+    border-radius: 5px;
+    background-color: rgb(232, 201, 205);
+}
+
+.package-item-list:hover{
+    scale: 1.1;
+}
+.package-item-list-name{
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+    background-color: gray;
+    color: white;
+}
+
+.package-item-list:hover .package-item-list-name{
+    background-color: red;
+}
+
+.package-item-list-price{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 35px;
+}
+
+/* package-payments */
+.package-payments{
+    display: flex;
+    gap:15px;
+}
+
+.package-payment-list{
+    border: 1px solid white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    font-size: 40px;
+    height: 160px;
+    border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: antiquewhite;
+    height: 180px;
+}
+
+.package-payment-list:hover{
+    scale: 1.1;
+}
+
+/* Checkout */
+.checkout{
+
+    background-color: skyblue;
+    height: 25rem;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.4);
+    padding: 15px;
+}
+
+.checkout-content{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+.checkout-package-name{
+    text-align: center;
+}
+.checkout-package-price{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.checkout-package-payment{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.checkout-package-prefix{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.checkout-package-username{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.checkout-package-userphone{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.btn-buy{
+    width: 100%;
+    height: 50px;
+}
+
+
+
+
+/* receipt */
+
+.receipt{
+    height: 25rem;
+    padding: 30px;
+}
+
+.receipt-container{
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: skyblue;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.4);
+}
+.receipt-content{
+    background-color: white;
+    border-radius: 15px;
+    height: 100%;
+    padding: 15px;
+}
+.receipt-content h1{
+    text-align: center;
+}
+
+.receipt-price{
+    padding: 10px;
+}
+
+.receipt-payment-type{
+    padding: 10px;
+}
+
+.receipt-prefix{
+    padding: 10px;
+}
+
+.receipt-name{
+    padding: 10px;
+}
+
+.receipt-phone{
+    padding: 10px;
+}
+
+.receipt-address{
+    padding: 10px;
+}
